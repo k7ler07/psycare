@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="content-type" content="charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Psychological Assessment | The Psycare Psychology Centre</title>
+    <meta name="title" content="Psychological Assessment | The Psycare Psychology Centre">
+    <meta name="description" content="Professional psychological assessment services including mental health, personality, neurodevelopmental, IQ, and career assessments in Kota Kinabalu, Sabah.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://thepsycarecentre.website3.me/psychological-assessment" />
+    <meta property="og:title" content="Psychological Assessment | The Psycare Psychology Centre" />
+    <meta property="og:description" content="Professional psychological assessment services including mental health, personality, neurodevelopmental, IQ, and career assessments." />
+    <meta property="og:image" content="http://upload.wsecdn2.websitecdn.com/screenshot/site/site-hx4km9cs.websiteserver4.com/?20241223090225" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://thepsycarecentre.website3.me/psychological-assessment" />
+    <meta property="twitter:title" content="Psychological Assessment | The Psycare Psychology Centre" />
+    <meta property="twitter:description" content="Professional psychological assessment services including mental health, personality, neurodevelopmental, IQ, and career assessments." />
+    <meta property="twitter:image" content="http://upload.wsecdn2.websitecdn.com/screenshot/site/site-hx4km9cs.websiteserver4.com/?20241223090225" />
+
+    <link rel="canonical" href="http://thepsycarecentre.website3.me/psychological-assessment" />
+    <link rel="alternate" href="http://thepsycarecentre.website3.me/psychological-assessment" hreflang="x-default" />
+
+    <meta name="theme-color" content="#1a4b8c">
+    <meta name="format-detection" content="telephone=no"/>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #1a4b8c;
+            --light-blue: #e6f0ff;
+            --accent-blue: #3a75c9;
+            --dark-blue: #0f2d56;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Jost', sans-serif;
+            font-weight: 400;
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+        
+        .site-title {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        nav a:hover, nav a.active {
+            color: var(--primary-blue);
+        }
+        
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .header-buttons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+        }
+        
+        .social-links {
+            display: flex;
+            margin-left: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--light-blue);
+            color: var(--primary-blue);
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        /* Mobile Navigation */
+        .mobile-nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/remote/imageProxy.cfc?method=viewLibraryImage&s=QEVKNT4iWFo3TklOWUcxRF0%2FP0pEVSA0LEUqOy9SUz48Si8sPE85NDcuVyggCg%3D%3D&w=1920') center/cover no-repeat;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: var(--text-light);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .service-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px 40px;
+            align-items: center;
+        }
+        
+        .service-image, .service-content {
+            flex: 1;
+            padding: 0 15px;
+            min-width: 300px;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .service-content p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .faq-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .faq-answer {
+            margin-top: 15px;
+            color: var(--text-light);
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 20px;
+            width: 120px;
+        }
+        
+        .footer-contact div {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .footer-contact svg {
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            margin-bottom: 15px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-nav-toggle {
+                display: block;
+            }
+            
+            .faq-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .service-row {
+                flex-direction: column;
+            }
+            
+            .service-image, .service-content {
+                margin-bottom: 30px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://i.imgur.com/6u4G8zZ.png" alt="The Psycare Psychology Centre" class="logo">
+                <div class="site-title">The Psycare Psychology Centre</div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="assesment.html">Psychological Assessment</a></li>
+                    <li><a href="counseling.html">Counselling & Psychotherapy</a></li>
+                    <li><a href="seminat.html">Training & Workshops</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-buttons">
+          
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100088144394208" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 极速飞艇开奖结果 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/clinicpsychologykk/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="极速飞艇开奖结果 0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 极速飞艇开奖结果 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 极速飞艇开奖结果 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.极速飞艇开奖结果 96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 极速飞艇开奖结果 0 1 0 0 8.217 4.109 4.109 0 0 极速飞艇开奖结果 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 极速飞艇开奖结果 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="mobile-nav-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Psychological Assessment</h1>
+            <p>A psychological assessment is a comprehensive evaluation conducted by a trained psychologist to understand an individual's mental, emotional, behavioural, and cognitive functioning. It can be tailored for children, teens, and adults, with the approach adjusted to suit their age, developmental stage, and specific needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Assessment Services</h2>
+            </div>
+            
+            <!-- Mental Health Assessments -->
+            <div class="service-row">
+                <div class="service-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1665990294269-f1d6c35ab9d1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGhlcmFwaHl8ZW58MHx8MHx8fDA%3D" alt="Mental Health Assessments">
+                </div>
+                <div class="service-content">
+                    <h3>Mental Health Assessments</h3>
+                    <p>We provide mental health assessments to evaluate a person's emotional and psychological well-being. These assessments are designed to identify conditions like anxiety, depression, and other mental health challenges. The goal is to make an accurate diagnosis and create a tailored treatment plan, which may include therapy or support strategies, to help improve their overall mental health and well-being.</p>
+                    <a href="/contact" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Personality Assessments -->
+            <div class="service-row">
+                <div class="service-content">
+                    <h3>Personality Assessments</h3>
+                    <p>We offer personality assessments to better understand a person's characteristic patterns of thinking, feeling, and behaving. These assessments help identify key personality traits, such as how a person responds to stress, interacts with others, and makes decisions. The goal is to gain insights into individual behaviours and preferences, which can assist in personal development, improving relationships, and making informed career or life choices.</p>
+                    <a href="/contact" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://media.istockphoto.com/id/1136861301/photo/man-has-confused-thinking-question-mark-icon-on-paper-bag-copy-space.jpg?s=612x612&w=0&k=20&c=3R5fRLVK64M1xriOV3zoJJ0YY5d5BpDKpiI0zOarMnY=" alt="Personality Assessments">
+                </div>
+            </div>
+            
+            <!-- Neurodevelopmental Assessments -->
+            <div class="service-row">
+                <div class="service-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1722684650552-bfaf747e3c9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TmV1cm9kZXZlbG9wbWVudGFsfGVufDB8fDB8fHww" alt="Neurodevelopmental Assessments">
+                </div>
+                <div class="service-content">
+                    <h3>Neurodevelopmental Assessments</h3>
+                    <p>We provide neurodevelopmental assessments to evaluate a person's cognitive, emotional, and social development, especially in children and teens. These assessments are designed to identify conditions such as Autism, ADHD, learning disabilities (dyslexia), and developmental delays. The goal is to understand the individual's strengths and challenges, allowing for tailored support and interventions to promote their growth, learning, and overall well-being.</p>
+                    <a href="/contact" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- IQ Assessments -->
+            <div class="service-row">
+                <div class="service-content">
+                    <h3>IQ Assessments</h3>
+                    <p>We offer IQ assessments for children, teenagers, and adults to evaluate cognitive abilities like reasoning and memory. For children and teens, these assessments help identify learning challenges, especially related to ADHD, and guide appropriate school placement. For adults, IQ assessments help understand how ADHD affects daily life, work, and relationships, leading to personalized strategies for managing symptoms and improving well-being.</p>
+                    <a href="/contact" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://cdn.prod.website-files.com/656b574d4c3db5a4d0ef52fa/657e9d5a557861b4dceb343a_Autistic%20(12).jpg" alt="IQ Assessments">
+                </div>
+            </div>
+            
+            <!-- Career Assessments -->
+            <div class="service-row">
+                <div class="service-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1661771773771-a093c948ba92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyZWVyfGVufDB8fDB8fHww" alt="Career Assessments">
+                </极速飞艇开奖结果 div>
+                <div class="service-content">
+                    <h3>Career Assessments</h3>
+                    <p>We offer career assessments to help individuals identify their strengths, interests, and skills, guiding them toward suitable career paths. These assessments provide insights into personal preferences, abilities, and potential challenges, helping with career decision-making, job placement, and professional development. Whether for students exploring career options or adults seeking a career change, the goal is to align personal strengths with rewarding career opportunities.</p>
+                    <a href="/contact" class="btn btn-primary">Get A Quote</a>
+                </div>
+            </div>
+            
+            <!-- Mental Health Screening -->
+            <div class="service-row">
+                <div class="service-content">
+                    <h3>Mental Health Screening</h3>
+                    <p>We offer mental health screening to help identify early signs of mental health concerns such as anxiety, depression, or stress. Through brief assessments or questionnaires, we quickly evaluate emotional well-being and behavioural patterns. The goal is to detect potential mental health issues early, allowing for timely support, treatment, or further evaluation. Our screenings are designed to promote overall well-being and help individuals get the care they need.</p>
+                    <a href="/contact" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://media.istockphoto.com/id/1169696855/photo/psychologist-understanding-problems-of-a-woman-patient.webp?a=1&b=1&s=612x612&w=0&k=20&c=YFmqricjMITBUlSv_1krLh_fkYhjjNWEgLVS0cFdar4=" alt="Mental Health Screening">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div>
+                    <h3>Have Questions?</h3>
+                    <p>We're here to help answer any questions you might have about our assessment services.</p>
+                </div>
+                
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Who needs a psychological assessment?
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Children, teenagers, and adults facing issues like anxiety, depression, learning difficulties, developmental delay, ADHD, trauma, or any mental health concerns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="fa极速飞艇开奖结果 q-question">
+                            How long does a psychological assessment take?
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>It varies depending on the individual's needs and the type of assessment. Typically, it can take a few hours and may require follow-up sessions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I prepare for a psychological assessment?
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No special preparation required. It's helpful to be open and honest during the assessment. You may be asked to bring any relevant medical or educational records, especially if it's for a specific condition or diagnosis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How can I contact to set up an appointment?
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can schedule an appointment by texting or contacting us at 011-36044552. Our team will respond promptly to confirm your appointment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <img src="//site-hx4km9cs.wsecdn2.websitecdn.com/uploads/100/d67520cf2f984bb2b7cf00e2aaf1a6ec.jpg?v=0" alt="The Psycare Psychology Centre" class="footer-logo">
+                    <h3>The Psycare Psychology Centre</h3>
+                    <p>Providing professional psychological assessment services in Kota Kinabalu, Sabah.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 极速飞艇开奖结果 0 6z"/>
+                        </svg>
+                        <p>F218 Level 1, 1Borneo Hypermall, Jalan Sulaman, 88400. Kota Kinabalu, Sabah</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122极速飞艇开奖结果 l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 极速飞艇开奖结果 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <p>+6011-36044552</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2极速飞艇开奖结果 -2h12a2 2 0 0 1 2 2v8a2 2 极速飞艇开奖结果 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        <p>thepsycare@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Operating Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 All Rights Reserved The Psycare Psychology Centre</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                
+                document.querySelectorAll('.faq-question span').forEach(span => {
+                    span.textContent = '+';
+                });
+                
+                // If answer wasn't active, open it
+                if (!isActive) {
+                    answer.classList.add('active');
+                    question.querySelector('span').textContent = '-';
+                }
+            });
+        });
+        
+        // Mobile navigation toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const nav = document.querySelector('nav ul');
+        
+        mobileNavToggle.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
