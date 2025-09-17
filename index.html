@@ -595,6 +595,31 @@
             margin-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
+            .learn-more {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #1a4b85; /* Dark blue */
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s ease;
+    }
+
+    .learn-more:hover {
+      color: #0d2b4f; /* Darker blue on hover */
+    }
+
+    .learn-more::after {
+      content: "→";
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .learn-more:hover::after {
+      transform: translateX(4px);
+    }
     </style>
 </head>
 <body>
@@ -773,7 +798,7 @@
     <div class="advisor-content">
         <h3>Prof Datuk Dr Mohd Tajudin Md Ninggal</h3>
         <h4>Professor Of Counselling Psychology, Malaysia</h4>
-        <p>Professor Datuk Dr. Mohd Tajudin Md Ninggal is an expert in counselling and psychology with over 33 years of experience.</p>
+        <p>Professor Datuk Dr. Mohd Tajudin Md Ninggal is an expert in counselling and psychology with over 33 years of experience.</p><a href="https://www.researchgate.net/profile/Mohd-Tajudin-Ninggal" class="learn-more">LEARN MORE</a>
     </div>
 </div>
 
@@ -784,7 +809,7 @@
                     <div class="advisor-content">
                         <h3>Assoc Professor Paul Hutchings</h3>
                         <h4>Associate Professor of Psychology, University of Wales Trinity Saint David, United Kingdom</h4>
-                        <p>Paul Hutchings specialises in prejudice research and has strong ties to Malaysian psychology.</p>
+                        <p>Paul Hutchings specialises in prejudice research and has strong ties to Malaysian psychology.</p><a href="https://www.researchgate.net/profile/Paul-Hutchings" class="learn-more">LEARN MORE</a>
                     </div>
                 </div>
                 
@@ -794,22 +819,11 @@
                     <div class="advisor-content">
                         <h3>Prof Gary Winship</h3>
                         <h4>Professor of Trauma, Education and Mental Health, University of Nottingham, United Kingdom</h4>
-                        <p>Having 30+ years of clinical and academic experience. He specialises in trauma, psychotherapy, and mental health.</p>
+                        <p>Having 30+ years of clinical and academic experience. He specialises in trauma, psychotherapy, and mental health.</p><a href="https://www.researchgate.net/profile/Gary-Winship" class="learn-more">LEARN MORE</a>
                     </div>
                 </div>
                 
-                <!-- Advisor 4 -->
-                <div class="advisor-card">
-		            <div class="advisor-image"> <img src="data:image/jpeg;base64,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" alt="PDato' Dr. Halim B. Mohd Hussin"></div>
-                    <div class="advisor-content">
-                        <h3>Dato' Dr. Halim B. Mohd Hussin</h3>
-                        <h4>President International Counselling Association of Malaysia (PERKAMA International)</h4>
-                        <p>Dedicated to advancing counselling practices, promoting professional development, and supporting mental health initiatives.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
 
 
     <!-- Footer -->
