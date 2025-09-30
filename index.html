@@ -620,6 +620,118 @@
     .learn-more:hover::after {
       transform: translateX(4px);
     }
+        /* Add this CSS to your <style> section to align the buttons side by side and center them on all devices */
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width: 768px) {
+        .hero-buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .btn {
+            margin: 0 !important;
+            width: 100%;
+            max-width: 250px;
+        }
+    }    /* Add this to your <style> section, after your existing footer styles */
+    
+    /* Ensure footer is always readable in both light and dark mode */
+    footer, .footer-content, .footer-info, .footer-contact, .footer-links, .footer-hours {
+        background-color: var(--dark, #2c3e50) !important;
+        color: #fff !important;
+    }
+    
+    footer a, .footer-links a, .footer-contact i, .social-icons a, .social-links a {
+        color: #fff !important;
+    }
+    
+    footer a:hover, .footer-links a:hover, .social-icons a:hover, .social-links a:hover {
+        color: var(--accent, #ff6b6b) !important;
+    }
+    
+    .copyright {
+        color: #fff !important;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    /* Optional: Add support for system dark mode */
+    @media (prefers-color-scheme: dark) {
+        footer, .footer-content, .footer-info, .footer-contact, .footer-links, .footer-hours {
+            background-color: #181c22 !important;
+            color: #fff !important;
+        }
+        .copyright {
+            color: #fff !important;
+        }
+    }    /* ...existing code... */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 32px;
+        align-items: stretch;
+        margin-bottom: 0;
+    }
+    
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        height: 100%;
+        min-height: 420px;
+    }
+    
+    .service-image {
+        height: 200px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    
+    .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+    
+    .service-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 25px;
+    }
+    
+    .service-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: var(--dark);
+    }
+    
+    .service-content p {
+        margin-bottom: 20px;
+        color: #666;
+        flex: 1;
+    }
+    
+    .service-link {
+        color: var(--primary);
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        margin-top: auto;
+    }
+    /* ...existing code... */
     </style>
 </head>
 <body>
@@ -638,7 +750,7 @@
                     <li><a href="counseling.html">Counselling & Psychotherapy</a></li>
                     <li><a href="seminat.html">Training & Workshops</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="nav-cta">Book Appointment</a></li>
+                    
                 </ul>
             </nav>
             
@@ -782,7 +894,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        <!-- Remove the "Book Appointment" button from the navigation -->
+ 
     </section>
        <!-- Advisors Section -->
     <section class="advisors">
@@ -832,7 +945,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-logo">
-                      <img src="https://i.imgur.com/6u4G8zZ.png 
+                      <img src="https://i.imgur.com/6u4G8zZ.png"
      alt="Logo" 
      width="100" 
      height="100">

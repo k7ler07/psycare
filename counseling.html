@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta http-equiv="content-type" content="charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Counselling & Psychotherapy | The Psycare Psychology Centre</title>
-    <meta name="title" content="Counselling & Psychotherapy | The Psycare Psychology Centre">
-    <meta name="description" content="Professional counselling and psychotherapy services for individuals, couples, families, teens, and children in Kota Kinabalu, Sabah.">
-    
+ 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://thepsycarecentre.website3.me/services" />
@@ -70,6 +65,7 @@
             margin: 0 auto;
             padding: 0 15px;
         }
+        
         
         /* Header Styles */
         header {
@@ -184,14 +180,60 @@
         }
         
         /* Mobile Navigation */
-        .mobile-nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--primary-blue);
-            cursor: pointer;
-        }
+/* ...existing code... */
+@media (max-width: 992px) {
+    .nav-toggle {
+        display: none;
+    }
+    .mobile-nav-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--primary-blue);
+        z-index: 2001;
+        position: relative;
+        margin-left: 20px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255,255,255,0.98);
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-toggle:checked + .mobile-nav-toggle + nav ul {
+        display: flex;
+    }
+    nav ul li {
+        margin: 20px 0;
+        font-size: 1.5rem;
+    }
+    .header-buttons {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 993px) {
+    .mobile-nav-toggle,
+    .nav-toggle {
+        display: none !important;
+    }
+    nav ul {
+        display: flex !important;
+        position: static;
+        height: auto;
+        background: none;
+    }
+}
         
         /* Hero Section */
         .hero {
@@ -451,7 +493,19 @@
                         </svg>
                     </a>
                 </div>
-                <button class="mobile-nav-toggle">☰</button>
+               <!-- Place these inside .header-container, before <nav> -->
+<!-- ...inside .header-container, before <nav>... -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+<label for="nav-toggle" class="mobile-nav-toggle" aria-label="Open navigation">☰</label>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assesment.html">Psychological Assessment</a></li>
+        <li><a href="counseling.html">Counselling & Psychotherapy</a></li>
+        <li><a href="seminat.html">Training & Workshops</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
             </div>
         </div>
     </header>
@@ -487,13 +541,14 @@
             <!-- Couple Therapy -->
             <div class="service-row">
                 <div class="service-content">
+                                <div class="service-image">
+                    <img src="https://media.istockphoto.com/id/2171295029/photo/couple-therapy-and-holding-hands-with-discussion-on-sofa-for-guidance-communication-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=-dgJszI5VHrKnAsgolSylWEQ9cWkDDFG76tAv0iCsjU=" alt="Couple Therapy">
                     <h3>Spouse/Couple Therapy</h3>
                     <div class="price">Starting from RM300</div>
                     <p>We offer spouse and couple therapy to help partners improve communication, resolve conflicts, and strengthen their relationship in a safe and supportive environment.</p>
                     <a href="/contact" class="btn btn-primary">Get A Quote</a>
                 </div>
-                <div class="service-image">
-                    <img src="https://media.istockphoto.com/id/2171295029/photo/couple-therapy-and-holding-hands-with-discussion-on-sofa-for-guidance-communication-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=-dgJszI5VHrKnAsgolSylWEQ9cWkDDFG76tAv0iCsjU=" alt="Couple Therapy">
+
                 </div>
             </div>
             
@@ -513,14 +568,16 @@
             <!-- Teen Therapy -->
             <div class="service-row">
                 <div class="service-content">
+                                                    <div class="service-image">
+                    <img src="https://grow-therapy.coak-sg-host.com/wp-content/uploads/2024/01/teen-in-counseling-session.jpg" alt="Teen Therapy">
+                </div>
                     <h3>Teen Therapy</h3>
+
                     <div class="price">Starting From RM200</div>
                     <p>We offer teen therapy to help teenagers navigate challenges such as stress, anxiety, depression, and relationship issues. Our therapists provide a safe space for teens to express themselves and develop coping strategies for better emotional well-being.</p>
                     <a href="/contact" class="btn btn-primary">Get A Quote</a>
                 </div>
-                <div class="service-image">
-                    <img src="https://grow-therapy.coak-sg-host.com/wp-content/uploads/2024/01/teen-in-counseling-session.jpg" alt="Teen Therapy">
-                </div>
+
             </div>
             
             <!-- Child Therapy -->
@@ -539,14 +596,15 @@
             <!-- Online Session -->
             <div class="service-row">
                 <div class="service-content">
+                                <div class="service-image">
+                    <img src="https://media.istockphoto.com/id/2154184023/photo/young-female-on-online-therapy-with-psychologist-psychotherapist.webp?a=1&b=1&s=612x612&w=0&k=20&c=yKeWw0R3XlDD0kGVRbEFN6aEy4hGsZLePq96VyCJ19E=" alt="Online Therapy">
+                </div>
                     <h3>Online Session</h3>
                     <div class="price">Depends on what type of therapy</div>
                     <p>We offer flexible online therapy sessions for those who prefer the convenience of receiving care from home. Our secure platform ensures privacy and effectiveness for all our therapy options.</p>
                     <a href="/contact" class="btn btn-primary">Get A Quote</a>
                 </div>
-                <div class="service-image">
-                    <img src="https://media.istockphoto.com/id/2154184023/photo/young-female-on-online-therapy-with-psychologist-psychotherapist.webp?a=1&b=1&s=612x612&w=0&k=20&c=yKeWw0R3XlDD0kGVRbEFN6aEy4hGsZLePq96VyCJ19E=" alt="Online Therapy">
-                </div>
+
             </div>
         </div>
     </section>
@@ -710,13 +768,7 @@
             });
         });
         
-        // Mobile navigation toggle
-        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-        const nav = document.querySelector('nav ul');
-        
-        mobileNavToggle.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-        });
+
     </script>
 </body>
 </html>
